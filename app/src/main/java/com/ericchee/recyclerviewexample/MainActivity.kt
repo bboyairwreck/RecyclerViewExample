@@ -2,6 +2,8 @@ package com.ericchee.recyclerviewexample
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.support.v7.widget.LinearLayoutManager
+import android.support.v7.widget.StaggeredGridLayoutManager
 import android.widget.Toast
 import com.ericchee.recyclerviewexample.animated.PersonRecyclerAdapterAnimated
 import kotlinx.android.synthetic.main.activity_main.*
@@ -63,15 +65,16 @@ class MainActivity : AppCompatActivity() {
                     https://medium.com/@gabornovak/use-diffutil-for-out-of-the-box-animations-d932a28d6229
          */
 
+
         /*
-          Change type of LayoutManager to set how items are laid out
+         Change type of LayoutManager to set how items are laid out
 
             myRecyclerView.layoutManager = StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL)
-                or
+                // or
             myRecyclerView.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
-                or
+                // or
             myRecyclerView.layoutManager = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
-
         */
+
     }
 }
