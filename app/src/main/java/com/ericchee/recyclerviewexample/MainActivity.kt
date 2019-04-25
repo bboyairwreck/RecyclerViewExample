@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
 
         val listOfPeople = listOf("Eric", "Joy", "Ted", "Baymax", "Pikachu", "Spiderman", "SpongeBob Squarepants", "Captain Holt", "Tyrion Lannister", "Eminem")
 
-        val adapter = PersonRecyclerAdapterAnimated(listOfPeople)
+        val adapter = PersonRecyclerAdapter(listOfPeople)
         myRecyclerView.adapter = adapter
         myRecyclerView.setHasFixedSize(true)
 

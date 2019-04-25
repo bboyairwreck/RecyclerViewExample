@@ -8,6 +8,9 @@ import android.view.ViewGroup
 import com.ericchee.recyclerviewexample.R
 import kotlinx.android.synthetic.main.item_person.view.*
 
+/**
+ * This is the same RecyclerView but using DiffUtil instead of notifyDataSetChanged() to animate changes
+ */
 class PersonRecyclerAdapterAnimated(var listOfNames: List<String>): RecyclerView.Adapter<PersonRecyclerAdapterAnimated.PersonViewHolder>() {
 
     var onPersonClickedListener: ((position: Int, name: String) -> Unit)? = null

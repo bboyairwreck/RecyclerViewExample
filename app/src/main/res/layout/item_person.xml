@@ -4,14 +4,23 @@
     android:layout_height="wrap_content"
     xmlns:tools="http://schemas.android.com/tools"
     android:padding="30dp"
+    android:orientation="horizontal"
     android:foreground="?android:selectableItemBackground">
     <!-- set foreground to this ^ for animation onClick-->
 
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@mipmap/ic_launcher_round"/>
+
     <TextView
         android:id="@+id/tvName"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:text="Name"/>
+        tools:text="Name"
+        android:layout_gravity="center_vertical"
+        android:textSize="20sp"
+        android:layout_marginStart="12dp"/>
 
 </LinearLayout>
 

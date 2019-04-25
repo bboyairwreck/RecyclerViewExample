@@ -6,6 +6,9 @@ import android.view.View
 import android.view.ViewGroup
 import kotlinx.android.synthetic.main.item_person.view.*
 
+/**
+ * This class will generate the recycled views and load data when they come into screen using view holder pattern
+ */
 class PersonRecyclerAdapter(var listOfNames: List<String>): RecyclerView.Adapter<PersonRecyclerAdapter.PersonViewHolder>() {
 
     var onPersonClickedListener: ((position: Int, name: String) -> Unit)? = null
